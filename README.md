@@ -1,16 +1,37 @@
-## Hi there 👋
+# 👋 Hello, I'm Chanra
 
-<!--
-**chanrachory/chanrachory** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 Student | Web Developer (Beginner)  
+🌱 Currently learning: HTML, CSS, JavaScript, React  
+🚀 Goal: Become a Full-Stack Developer  
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠️ Skills
+- HTML5
+- CSS3 (Tailwind CSS)
+- JavaScript
+- Git & GitHub
+
+---
+
+## 📚 Currently Learning
+- React JS
+- Backend (PHP / Node.js)
+- Database (MySQL)
+
+---
+
+## 📂 Projects
+- 🛒 POS System (HTML, CSS, JS)
+- 📰 News Website Layout
+- 🎮 Tic Tac Toe Game
+
+---
+
+## 📫 Contact Me
+- GitHub: https://github.com/chanrachory
+- Email: your-email@example.com
+
+---
+
+⭐ Don't forget to follow me!

@@ -14,5 +14,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
-          comment_tag_name: "repos" # វានឹងស្វែងរក START_SECTION:repos ដោយស្វ័យប្រវត្តិ
           feed_list: "https://github.com/chanrachory.atom"
+          

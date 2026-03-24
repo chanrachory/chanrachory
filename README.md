@@ -3,14 +3,22 @@
 💻 Passionate Student Developer  
 🚀 Future Full-Stack Developer  
 
+<img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&lines=Web+Developer;Learning+React;Building+Projects;Always+Improving" />
+
 ![Profile Views](https://komarev.com/ghpvc/?username=chanrachory&color=blue)
 
 ---
 
-## 📂 Projects
-- 🛒 POS System – HTML, CSS, JavaScript
-- 📰 News Website Layout
-- 🎮 Tic Tac Toe Game
+## 📂 Featured Projects
+- 🛒 POS System – HTML, CSS, JavaScript  
+- 🎮 Tic Tac Toe Game  
+- 📰 News Website  
+
+---
+
+## 🤖 My Repositories (Auto)
+<!--START_SECTION:repos-->
+<!--END_SECTION:repos-->
 
 ---
 
@@ -22,19 +30,29 @@
 ---
 
 ## 📊 GitHub Stats
-![Chanra's GitHub stats](https://github-readme-stats.vercel.app/api?username=chanrachory&show_icons=true&theme=tokyonight)
+![Stats](https://github-readme-stats.vercel.app/api?username=chanrachory&show_icons=true&theme=tokyonight)
 
 ---
 
 ## 🔥 Streak Stats
-![GitHub Streak](https://streak-stats.demolab.com?user=chanrachory&theme=tokyonight)
+![Streak](https://streak-stats.demolab.com?user=chanrachory&theme=tokyonight)
+
+---
+
+## 📈 Top Languages
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chanrachory&layout=compact&theme=tokyonight)
+
+---
+
+## 🐍 Contribution Snake
+![Snake animation](https://github.com/chanrachory/chanrachory/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
 ## 📫 Contact Me
-- GitHub: https://github.com/chanrachory
-- Email: chanrachory11@gmail.com
-- Telegram: https://t.me/Chanra_APL
+- GitHub: https://github.com/chanrachory  
+- Email: chanrachory11@gmail.com  
+- Telegram: https://t.me/Chanra_APL  
 
 ---
 

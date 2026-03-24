@@ -12,12 +12,13 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # បំបាត់ Warning រឿង Node.js
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4 # ប្រើ v4 ធម្មតា
+        uses: actions/checkout@v4
 
       - name: Update README with Repositories
-        uses: gautamkrishnar/blog-post-workflow@master # ប្តូរពី @v1.0.0 មក @master វិញ
+        uses: gautamkrishnar/blog-post-workflow@master
         with:
+          comment_tag_name: "blog-posts" # កំណត់ឱ្យត្រូវនឹង Tag ក្នុង README
           feed_list: "https://github.com/chanrachory.atom"

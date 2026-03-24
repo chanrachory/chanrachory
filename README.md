@@ -1,30 +1,33 @@
 # 👋 Hello, I'm Chanra
 
-💻 Student | Web Developer (Beginner)  
-🌱 Currently learning: HTML, CSS, JavaScript, React  
-🚀 Goal: Become a Full-Stack Developer  
+💻 Passionate Student Developer  
+🚀 Future Full-Stack Developer  
 
----
-
-## 🛠️ Skills
-- HTML5
-- CSS3 (Tailwind CSS)
-- JavaScript
-- Git & GitHub
-
----
-
-## 📚 Currently Learning
-- React JS
-- Backend (PHP / Node.js)
-- Database (MySQL)
+![Profile Views](https://komarev.com/ghpvc/?username=chanrachory&color=blue)
 
 ---
 
 ## 📂 Projects
-- 🛒 POS System (HTML, CSS, JS)
+- 🛒 POS System – HTML, CSS, JavaScript
 - 📰 News Website Layout
 - 🎮 Tic Tac Toe Game
+
+---
+
+## 🧰 Tools & Technologies
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,git,github,vscode" />
+</p>
+
+---
+
+## 📊 GitHub Stats
+![Chanra's GitHub stats](https://github-readme-stats.vercel.app/api?username=chanrachory&show_icons=true&theme=tokyonight)
+
+---
+
+## 🔥 Streak Stats
+![GitHub Streak](https://streak-stats.demolab.com?user=chanrachory&theme=tokyonight)
 
 ---
 
@@ -35,4 +38,4 @@
 
 ---
 
-⭐ Don't forget to follow me!
+⭐ Thanks for visiting my profile!

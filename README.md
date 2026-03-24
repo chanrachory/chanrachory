@@ -30,7 +30,8 @@
 
 ## 📫 Contact Me
 - GitHub: https://github.com/chanrachory
-- Email: your-email@example.com
+- Email: chanrachory11@gmail.com
+- Telegram: https://t.me/Chanra_APL
 
 ---
 

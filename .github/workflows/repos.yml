@@ -1,5 +1,4 @@
 name: Update Repo List
-description: Automate updates to the repository list in the README file using a scheduled or manual trigger.
 
 on:
   schedule:
@@ -15,7 +14,10 @@ jobs:
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      - uses: actions/checkout@v4.0.0
-      - uses: gautamkrishnar/blog-post-workflow@v1.0.0
+      - name: Checkout Repository
+        uses: actions/checkout@v4 # ប្រើ v4 ធម្មតា
+
+      - name: Update README with Repositories
+        uses: gautamkrishnar/blog-post-workflow@master # ប្តូរពី @v1.0.0 មក @master វិញ
         with:
           feed_list: "https://github.com/chanrachory.atom"

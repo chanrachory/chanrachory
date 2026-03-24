@@ -17,8 +17,8 @@
 ---
 
 ## 🤖 My Repositories (Auto)
-<!-- REPOS_LIST_START -->
-<!-- REPOS_LIST_END -->
+<!-- REPOS_LIST:START -->
+<!-- REPOS_LIST:END -->
 
 ---
 

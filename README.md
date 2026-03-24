@@ -3,7 +3,7 @@
 💻 Passionate Student Developer  
 🚀 Future Full-Stack Developer  
 
-<img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&lines=Web+Developer;Learning+React;Building+Projects;Always+Improving" />
+<img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&lines=Web+Developer;Learning+React+HTML+CSS+JavaScript;Building+Projects;Always+Improving" />
 
 ![Profile Views](https://komarev.com/ghpvc/?username=chanrachory&color=blue)
 
@@ -17,14 +17,11 @@
 ---
 
 ## 🤖 My Repositories (Auto)
-<!--START_SECTION:repos-->
-<!--END_SECTION:repos-->
-
 ---
 
 ## 🧰 Tools & Technologies
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,java,androidstudio,firebase,git,github,vscode" />
 </p>
 
 ---
@@ -50,9 +47,9 @@
 ---
 
 ## 📫 Contact Me
-- GitHub: https://github.com/chanrachory  
+- GitHub: [chanrachory](https://github.com/chanrachory)  
 - Email: chanrachory11@gmail.com  
-- Telegram: https://t.me/Chanra_APL  
+- Telegram: [Chanra_APL](https://t.me/Chanra_APL)  
 
 ---
 

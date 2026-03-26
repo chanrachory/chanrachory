@@ -3,7 +3,7 @@
 💻 Passionate Student Developer  
 🚀 Future Full-Stack Developer  
 
-<img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&lines=Web+Developer;Learning+React+HTML+CSS+JavaScript;Building+Projects;Always+Improving" />
+<img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&size=24&center=true&vCenter=true&width=500&lines=Web+Developer;Learning+HTML+CSS+JavaScriptReact+;Building+Projects;Always+Improving" />
 
 ![Profile Views](https://komarev.com/ghpvc/?username=chanrachory&color=blue)
 
@@ -18,46 +18,56 @@
 
 ## 🤖 My Repositories (Auto)
 <!-- REPOS_LIST:START -->
-- [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/3ab8aeb01d...66302dcbf6)
-- [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/15c9bd75f5...3ab8aeb01d)
-- [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/4fc7a3e94f...15c9bd75f5)
-- [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/9d57014ee5...4fc7a3e94f)
-- [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/84f18c99f3...9d57014ee5)
 <!-- REPOS_LIST:END -->
 
 ---
 
 ## 🧰 Tools & Technologies
-<p>
+<p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,java,androidstudio,firebase,git,github,vscode" />
 </p>
 
 ---
 
 ## 📊 GitHub Stats
-![Stats](https://github-readme-stats.vercel.app/api?username=chanrachory&show_icons=true&theme=tokyonight)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=chanrachory&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&cache_seconds=60" />
+</p>
 
 ---
 
 ## 🔥 Streak Stats
-![Streak](https://streak-stats.demolab.com?user=chanrachory&theme=tokyonight)
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=chanrachory&theme=tokyonight&cache_seconds=60" />
+</p>
 
 ---
 
 ## 📈 Top Languages
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chanrachory&layout=compact&theme=tokyonight)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chanrachory&layout=compact&theme=tokyonight&cache_seconds=60" />
+</p>
+
+---
+
+## ⚡ Activity Graph (NEW 🔥)
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=chanrachory&theme=tokyo-night&hide_border=true" />
+</p>
 
 ---
 
 ## 🐍 Contribution Snake
-![Snake animation](https://github.com/chanrachory/chanrachory/blob/output/github-contribution-grid-snake.svg)
+<p align="center">
+  <img src="https://github.com/chanrachory/chanrachory/blob/output/github-contribution-grid-snake.svg" />
+</p>
 
 ---
 
 ## 📫 Contact Me
-- GitHub: [chanrachory](https://github.com/chanrachory)  
+- GitHub: https://github.com/chanrachory  
 - Email: chanrachory11@gmail.com  
-- Telegram: [Chanra_APL](https://t.me/Chanra_APL)  
+- Telegram: https://t.me/Chanra_APL  
 
 ---
 

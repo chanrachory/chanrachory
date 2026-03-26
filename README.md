@@ -18,12 +18,18 @@
 
 ## 🤖 My Repositories (Auto)
 <!-- REPOS_LIST:START -->
+- [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/3ab8aeb01d...66302dcbf6)
+- [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/15c9bd75f5...3ab8aeb01d)
+- [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/4fc7a3e94f...15c9bd75f5)
+- [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/9d57014ee5...4fc7a3e94f)
+- [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/84f18c99f3...9d57014ee5)
 <!-- REPOS_LIST:END -->
+
 ---
 
 ## 🧰 Tools & Technologies
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,java,androidstudio,firebase,git,github,vscode,vite,ts,cisco" />
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,java,androidstudio,firebase,git,github,vscode" />
 </p>
 
 ---
@@ -38,23 +44,24 @@
 ---
 
 ## 🔥 Streak Stats
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=chanrachory&theme=tokyonight" alt="GitHub Streak" />
-</p>
+![Streak](https://streak-stats.demolab.com?user=chanrachory&theme=tokyonight)
+
+---
+
+## 📈 Top Languages
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chanrachory&layout=compact&theme=tokyonight)
 
 ---
 
 ## 🐍 Contribution Snake
-<p align="center">
-  <img src="https://github.com/chanrachory/chanrachory/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
-</p>
+![Snake animation](https://github.com/chanrachory/chanrachory/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
 ## 📫 Contact Me
-- **GitHub:** [chanrachory](https://github.com/chanrachory)  
-- **Email:** [chanrachory11@gmail.com](mailto:chanrachory11@gmail.com)  
-- **Telegram:** [Chanra_APL](https://t.me/Chanra_APL)  
+- GitHub: [chanrachory](https://github.com/chanrachory)  
+- Email: chanrachory11@gmail.com  
+- Telegram: [Chanra_APL](https://t.me/Chanra_APL)  
 
 ---
 

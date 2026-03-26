@@ -3,7 +3,7 @@
 💻 Passionate Student Developer  
 🚀 Future Full-Stack Developer  
 
-<img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&size=24&center=true&vCenter=true&width=500&lines=Web+Developer;Learning+HTML+CSS+JavaScriptReact+;Building+Projects;Always+Improving" />
+<img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&lines=Web+Developer;Learning+React+HTML+CSS+JavaScript;Building+Projects;Always+Improving" />
 
 ![Profile Views](https://komarev.com/ghpvc/?username=chanrachory&color=blue)
 
@@ -19,55 +19,42 @@
 ## 🤖 My Repositories (Auto)
 <!-- REPOS_LIST:START -->
 <!-- REPOS_LIST:END -->
-
 ---
 
 ## 🧰 Tools & Technologies
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,java,androidstudio,firebase,git,github,vscode" />
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,java,androidstudio,firebase,git,github,vscode,vite,ts,cisco" />
 </p>
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Analytics
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=chanrachory&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&cache_seconds=60" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=chanrachory&show_icons=true&theme=tokyonight" alt="Chanra's GitHub Stats" />
+  <br><br>
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=chanrachory&layout=compact&theme=tokyonight" alt="Top Languages" />
 </p>
 
 ---
 
 ## 🔥 Streak Stats
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=chanrachory&theme=tokyonight&cache_seconds=60" />
-</p>
-
----
-
-## 📈 Top Languages
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chanrachory&layout=compact&theme=tokyonight&cache_seconds=60" />
-</p>
-
----
-
-## ⚡ Activity Graph (NEW 🔥)
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=chanrachory&theme=tokyo-night&hide_border=true" />
+  <img src="https://streak-stats.demolab.com?user=chanrachory&theme=tokyonight" alt="GitHub Streak" />
 </p>
 
 ---
 
 ## 🐍 Contribution Snake
 <p align="center">
-  <img src="https://github.com/chanrachory/chanrachory/blob/output/github-contribution-grid-snake.svg" />
+  <img src="https://github.com/chanrachory/chanrachory/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </p>
 
 ---
 
 ## 📫 Contact Me
-- GitHub: https://github.com/chanrachory  
-- Email: chanrachory11@gmail.com  
-- Telegram: https://t.me/Chanra_APL  
+- **GitHub:** [chanrachory](https://github.com/chanrachory)  
+- **Email:** [chanrachory11@gmail.com](mailto:chanrachory11@gmail.com)  
+- **Telegram:** [Chanra_APL](https://t.me/Chanra_APL)  
 
 ---
 

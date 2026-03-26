@@ -32,14 +32,6 @@
   <img src="https://skillicons.dev/icons?i=html,css,js,react,tailwind,java,androidstudio,firebase,git,github,vscode" />
 </p>
 
----
-
-## 📊 GitHub Analytics
-<p align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=chanrachory&show_icons=true&theme=tokyonight" alt="Chanra's GitHub Stats" />
-  <br><br>
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=chanrachory&layout=compact&theme=tokyonight" alt="Top Languages" />
-</p>
 
 ---
 

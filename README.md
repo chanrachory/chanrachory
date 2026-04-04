@@ -18,11 +18,11 @@
 
 ## 🤖 My Repositories (Auto)
 <!-- REPOS_LIST:START -->
+- [chanrachory pushed birthday-wish](https://github.com/chanrachory/birthday-wish/compare/572950069c...d16f161169)
 - [chanrachory pushed chanra-portfolio](https://github.com/chanrachory/chanra-portfolio/compare/a93a1d35e1...58c5c4af37)
 - [chanrachory pushed chanra-portfolio](https://github.com/chanrachory/chanra-portfolio/compare/593c1a3c4e...a93a1d35e1)
 - [chanrachory created a branch](https://github.com/chanrachory/chanra-portfolio/compare/0000000000...593c1a3c4e)
 - [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/55d3c11371...5d3222fb87)
-- [chanrachory pushed chanrachory](https://github.com/chanrachory/chanrachory/compare/108af8e3db...55d3c11371)
 <!-- REPOS_LIST:END -->
 
 ---

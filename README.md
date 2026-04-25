@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.pinimg.com/originals/80/6e/de/806ede5583f088c6bdb788bf867f8064.gif" width="100%" />
+  <img src="https://i.pinimg.com/originals/80/6e/de/806ede5583f088c6bdb788bf867f8064.gif" width="100%" height="250px" style="object-fit: cover;" />
 </p>
 👋 Hello, I'm Chanra
 

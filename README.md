@@ -24,8 +24,6 @@
 - [chanrachory pushed Teab-kar](https://github.com/chanrachory/Teab-kar/compare/ae253d0395...072c5ff330)
 - [chanrachory pushed Teab-kar](https://github.com/chanrachory/Teab-kar/compare/46d1693ea1...ae253d0395)
 - [chanrachory pushed Teab-kar](https://github.com/chanrachory/Teab-kar/compare/bf90236293...46d1693ea1)
-- [chanrachory pushed Teab-kar](https://github.com/chanrachory/Teab-kar/compare/618cdc2b10...bf90236293)
-- [chanrachory pushed Teab-kar](https://github.com/chanrachory/Teab-kar/compare/6c26d9dd6e...618cdc2b10)
 <!-- REPOS_LIST:END -->
 
 ---

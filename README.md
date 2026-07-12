@@ -21,11 +21,7 @@
 
 ## 🤖 My Repositories (Auto)
 <!-- REPOS_LIST:START -->
-- [chanrachory pushed My-luy](https://github.com/chanrachory/My-luy/compare/ae944d20c0...9be682b4cf)
-- [chanrachory pushed My-luy](https://github.com/chanrachory/My-luy/compare/ead69d6078...ae944d20c0)
-- [chanrachory pushed My-luy](https://github.com/chanrachory/My-luy/compare/683ff21d66...ead69d6078)
-- [chanrachory pushed My-luy](https://github.com/chanrachory/My-luy/compare/b0301875bc...683ff21d66)
-- [chanrachory created a branch](https://github.com/chanrachory/My-luy/compare/0000000000...b0301875bc)
+- [chanrachory pushed birthday-wish](https://github.com/chanrachory/birthday-wish/compare/d16f161169...ab880959ca)
 <!-- REPOS_LIST:END -->
 
 ---

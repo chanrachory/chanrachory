@@ -3,19 +3,6 @@
 # 👋 Hello, I'm Chanra
 
 ### 💻 Student Developer   |   🚀 Future Full-Stack Developer
-
-<p>
-  <a href="https://github.com/chanrachory">
-    <img src="https://img.shields.io/badge/GitHub-chanrachory-181717?style=for-the-badge&logo=github" alt="GitHub"/>
-  </a>
-  <a href="mailto:chanrachory11@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  <a href="https://t.me/Chanra_APL">
-    <img src="https://img.shields.io/badge/Telegram-Contact-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
-  </a>
-</p>
-
 <img
 src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Web+Developer;Learning+React+%7C+JavaScript+%7C+CSS;Building+Real+World+Projects;Exploring+Full-Stack+Development;Always+Learning+%26+Improving"
 alt="Typing SVG"

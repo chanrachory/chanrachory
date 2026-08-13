@@ -1,24 +1,182 @@
-name: Update Repo List
+name: Update Featured Projects
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+workflow_dispatch:
+
+schedule:
+# Run every day at 00:00 UTC
+- cron: "0 0 * * *"
 
 permissions:
-  contents: write
+contents: write
 
 jobs:
-  update-readme:
-    runs-on: ubuntu-latest
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+update-projects:
+runs-on: ubuntu-latest
 
-      - name: Update README with Repositories
-        uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          comment_tag_name: "REPOS_LIST"
-          feed_list: "https://github.com/chanrachory.atom"
+```
+steps:
+  - name: Checkout Repository
+    uses: actions/checkout@v4
+
+  - name: Update Featured Projects
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_USERNAME: chanrachory
+    run: |
+      node <<'EOF'
+      const fs = require("fs");
+
+      const username = process.env.GITHUB_USERNAME;
+      const token = process.env.GITHUB_TOKEN;
+
+      async function getRepositories() {
+        const response = await fetch(
+          `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`,
+          {
+            headers: {
+              Accept: "application/vnd.github+json",
+              Authorization: `Bearer ${token}`,
+              "X-GitHub-Api-Version": "2022-11-28"
+            }
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(
+            `GitHub API Error: ${response.status}`
+          );
+        }
+
+        return await response.json();
+      }
+
+      async function main() {
+        let repos = await getRepositories();
+
+        // Filter repositories
+        repos = repos
+          .filter(repo => !repo.fork)
+          .filter(repo => !repo.archived)
+          .filter(repo => !repo.private)
+          .filter(repo => repo.name !== username)
+          .sort(
+            (a, b) =>
+              new Date(b.pushed_at) -
+              new Date(a.pushed_at)
+          )
+          .slice(0, 6);
+
+        const startMarker =
+          "<!-- PROJECTS:START -->";
+
+        const endMarker =
+          "<!-- PROJECTS:END -->";
+
+        let projects = "";
+
+        if (repos.length === 0) {
+          projects = "No public projects found.";
+        } else {
+          projects = repos
+            .map(repo => {
+              const description =
+                repo.description ||
+                "No description available.";
+
+              const language =
+                repo.language || "Code";
+
+              return `
+```
+
+### 🚀 [${repo.name}](${repo.html_url})
+
+${description}
+
+**${language}** · ⭐ ${repo.stargazers_count}
+`;
+})
+.join("\n");
+}
+
+```
+        const readmePath = "README.md";
+
+        if (!fs.existsSync(readmePath)) {
+          throw new Error("README.md not found.");
+        }
+
+        let readme = fs.readFileSync(
+          readmePath,
+          "utf8"
+        );
+
+        const startIndex =
+          readme.indexOf(startMarker);
+
+        const endIndex =
+          readme.indexOf(endMarker);
+
+        if (
+          startIndex === -1 ||
+          endIndex === -1
+        ) {
+          throw new Error(
+            "PROJECTS markers not found in README.md"
+          );
+        }
+
+        const before =
+          readme.substring(
+            0,
+            startIndex + startMarker.length
+          );
+
+        const after =
+          readme.substring(endIndex);
+
+        readme =
+          before +
+          "\n\n" +
+          projects +
+          "\n" +
+          after;
+
+        fs.writeFileSync(
+          readmePath,
+          readme,
+          "utf8"
+        );
+
+        console.log(
+          `Updated ${repos.length} projects.`
+        );
+
+        repos.forEach(repo => {
+          console.log(
+            `- ${repo.name}`
+          );
+        });
+      }
+
+      main().catch(error => {
+        console.error(error);
+        process.exit(1);
+      });
+      EOF
+
+  - name: Commit README Changes
+    run: |
+      git config user.name "github-actions[bot]"
+      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      git add README.md
+
+      if git diff --cached --quiet; then
+        echo "No changes to commit."
+      else
+        git commit -m "chore: update featured projects"
+        git push
+      fi
+```

@@ -1,182 +1,132 @@
 name: Update Featured Projects
 
 on:
-workflow_dispatch:
-
-schedule:
-# Run every day at 00:00 UTC
-- cron: "0 0 * * *"
+  workflow_dispatch:
+  schedule:
+    # Run every day at 00:00 UTC
+    - cron: '0 0 * * *'
 
 permissions:
-contents: write
+  contents: write
 
 jobs:
-update-projects:
-runs-on: ubuntu-latest
+  update-projects:
+    runs-on: ubuntu-latest
 
-```
-steps:
-  - name: Checkout Repository
-    uses: actions/checkout@v4
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # keep credentials so the action can push back
+          persist-credentials: true
 
-  - name: Update Featured Projects
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GITHUB_USERNAME: chanrachory
-    run: |
-      node <<'EOF'
-      const fs = require("fs");
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
-      const username = process.env.GITHUB_USERNAME;
-      const token = process.env.GITHUB_TOKEN;
+      - name: Update Featured Projects
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: chanrachory
+        run: |
+          node <<'EOF'
+          const fs = require('fs');
 
-      async function getRepositories() {
-        const response = await fetch(
-          `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`,
-          {
-            headers: {
-              Accept: "application/vnd.github+json",
-              Authorization: `Bearer ${token}`,
-              "X-GitHub-Api-Version": "2022-11-28"
+          const username = process.env.GITHUB_USERNAME;
+          const token = process.env.GITHUB_TOKEN;
+
+          async function getRepositories() {
+            const response = await fetch(
+              `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`,
+              {
+                headers: {
+                  Accept: 'application/vnd.github+json',
+                  Authorization: `Bearer ${token}`,
+                  'X-GitHub-Api-Version': '2022-11-28'
+                }
+              }
+            );
+
+            if (!response.ok) {
+              throw new Error(`GitHub API Error: ${response.status}`);
             }
+
+            return await response.json();
           }
-        );
 
-        if (!response.ok) {
-          throw new Error(
-            `GitHub API Error: ${response.status}`
-          );
-        }
+          async function main() {
+            let repos = await getRepositories();
 
-        return await response.json();
-      }
+            // Filter repositories
+            repos = repos
+              .filter(repo => !repo.fork)
+              .filter(repo => !repo.archived)
+              .filter(repo => !repo.private)
+              .filter(repo => repo.name !== username)
+              .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
+              .slice(0, 6);
 
-      async function main() {
-        let repos = await getRepositories();
+            const startMarker = '<!-- PROJECTS:START -->';
+            const endMarker = '<!-- PROJECTS:END -->';
 
-        // Filter repositories
-        repos = repos
-          .filter(repo => !repo.fork)
-          .filter(repo => !repo.archived)
-          .filter(repo => !repo.private)
-          .filter(repo => repo.name !== username)
-          .sort(
-            (a, b) =>
-              new Date(b.pushed_at) -
-              new Date(a.pushed_at)
-          )
-          .slice(0, 6);
+            let projects = '';
 
-        const startMarker =
-          "<!-- PROJECTS:START -->";
+            if (repos.length === 0) {
+              projects = 'No public projects found.';
+            } else {
+              projects = repos
+                .map(repo => {
+                  const description = repo.description || 'No description available.';
+                  const language = repo.language || 'Code';
 
-        const endMarker =
-          "<!-- PROJECTS:END -->";
+                  return `### 🚀 [${repo.name}](${repo.html_url})\n\n${description}\n\n**${language}** · ⭐ ${repo.stargazers_count}`;
+                })
+                .join('\n\n');
+            }
 
-        let projects = "";
+            const readmePath = 'README.md';
 
-        if (repos.length === 0) {
-          projects = "No public projects found.";
-        } else {
-          projects = repos
-            .map(repo => {
-              const description =
-                repo.description ||
-                "No description available.";
+            if (!fs.existsSync(readmePath)) {
+              throw new Error('README.md not found.');
+            }
 
-              const language =
-                repo.language || "Code";
+            let readme = fs.readFileSync(readmePath, 'utf8');
 
-              return `
-```
+            const startIndex = readme.indexOf(startMarker);
+            const endIndex = readme.indexOf(endMarker);
 
-### 🚀 [${repo.name}](${repo.html_url})
+            if (startIndex === -1 || endIndex === -1) {
+              throw new Error('PROJECTS markers not found in README.md');
+            }
 
-${description}
+            const before = readme.substring(0, startIndex + startMarker.length);
+            const after = readme.substring(endIndex);
 
-**${language}** · ⭐ ${repo.stargazers_count}
-`;
-})
-.join("\n");
-}
+            readme = before + '\n\n' + projects + '\n' + after;
 
-```
-        const readmePath = "README.md";
+            fs.writeFileSync(readmePath, readme, 'utf8');
 
-        if (!fs.existsSync(readmePath)) {
-          throw new Error("README.md not found.");
-        }
+            console.log(`Updated ${repos.length} projects.`);
+            repos.forEach(repo => console.log(`- ${repo.name}`));
+          }
 
-        let readme = fs.readFileSync(
-          readmePath,
-          "utf8"
-        );
+          main().catch(error => {
+            console.error(error);
+            process.exit(1);
+          });
+          EOF
 
-        const startIndex =
-          readme.indexOf(startMarker);
+      - name: Commit README Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-        const endIndex =
-          readme.indexOf(endMarker);
+          git add README.md
 
-        if (
-          startIndex === -1 ||
-          endIndex === -1
-        ) {
-          throw new Error(
-            "PROJECTS markers not found in README.md"
-          );
-        }
-
-        const before =
-          readme.substring(
-            0,
-            startIndex + startMarker.length
-          );
-
-        const after =
-          readme.substring(endIndex);
-
-        readme =
-          before +
-          "\n\n" +
-          projects +
-          "\n" +
-          after;
-
-        fs.writeFileSync(
-          readmePath,
-          readme,
-          "utf8"
-        );
-
-        console.log(
-          `Updated ${repos.length} projects.`
-        );
-
-        repos.forEach(repo => {
-          console.log(
-            `- ${repo.name}`
-          );
-        });
-      }
-
-      main().catch(error => {
-        console.error(error);
-        process.exit(1);
-      });
-      EOF
-
-  - name: Commit README Changes
-    run: |
-      git config user.name "github-actions[bot]"
-      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-      git add README.md
-
-      if git diff --cached --quiet; then
-        echo "No changes to commit."
-      else
-        git commit -m "chore: update featured projects"
-        git push
-      fi
-```
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update featured projects"
+            git push
+          fi

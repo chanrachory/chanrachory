@@ -38,7 +38,7 @@ Hi! I'm **Chanra**, a student developer who enjoys learning programming and buil
 
 * 🎓 Student Developer
 * 💻 Learning Web Development
-* ⚛️ Currently improving my React skills
+* ⚛️ Improving React skills
 * 🌐 Interested in Frontend & Full-Stack Development
 * 🔥 Enjoy building real-world projects
 * 📚 Always learning new technologies
@@ -122,7 +122,7 @@ alt="GitHub Streak"
 <div align="center">
 
 <img
-src="https://github.com/chanrachory/chanrachory/blob/output/github-contribution-grid-snake.svg"
+src="https://raw.githubusercontent.com/chanrachory/chanrachory/output/github-contribution-grid-snake.svg"
 alt="Contribution Snake"
 />
 
@@ -155,44 +155,17 @@ Full-Stack Development 🚀
 
 ## 🎯 Current Goals
 
-* [x] Learn HTML & CSS
+* [x] Learn HTML & CSS fundamentals
 * [x] Learn JavaScript fundamentals
 * [x] Learn Git & GitHub
 * [x] Build small web projects
-* [ ] Improve React skills
+* [ ] Improve JavaScript
+* [ ] Improve React
 * [ ] Learn Node.js
 * [ ] Learn Backend Development
 * [ ] Improve Database Skills
 * [ ] Build Full-Stack Applications
 * [ ] Become a Full-Stack Developer 🚀
-
----
-
-## 📚 What I'm Learning
-
-```text
-Frontend
-├── HTML
-├── CSS
-├── JavaScript
-├── React
-└── Tailwind CSS
-
-Backend
-├── Node.js
-├── PHP
-└── REST APIs
-
-Database
-├── MySQL
-└── Firebase
-
-Tools
-├── Git
-├── GitHub
-├── VS Code
-└── Android Studio
-```
 
 ---
 

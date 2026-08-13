@@ -80,6 +80,41 @@ Hi! I'm **Chanra**, a student developer who enjoys learning programming and buil
 
 <!-- PROJECTS:START -->
 
+### 🚀 [birthday-wish](https://github.com/chanrachory/birthday-wish)
+
+No description available.
+
+**CSS** · ⭐ 0
+
+### 🚀 [Teab-kar](https://github.com/chanrachory/Teab-kar)
+
+No description available.
+
+**JavaScript** · ⭐ 0
+
+### 🚀 [Naruto-Shadow-Clone](https://github.com/chanrachory/Naruto-Shadow-Clone)
+
+No description available.
+
+**JavaScript** · ⭐ 0
+
+### 🚀 [My-Portfolio](https://github.com/chanrachory/My-Portfolio)
+
+No description available.
+
+**HTML** · ⭐ 0
+
+### 🚀 [chanra-portfolio](https://github.com/chanrachory/chanra-portfolio)
+
+No description available.
+
+**CSS** · ⭐ 0
+
+### 🚀 [QR-Form](https://github.com/chanrachory/QR-Form)
+
+No description available.
+
+**PHP** · ⭐ 0
 <!-- PROJECTS:END -->
 
 ---

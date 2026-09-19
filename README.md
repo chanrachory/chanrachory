@@ -67,17 +67,17 @@ Hi! I'm **Chanra**, a student developer who enjoys learning programming and buil
 
 <!-- PROJECTS:START -->
 
-### 🚀 [birthday-wish](https://github.com/chanrachory/birthday-wish)
-
-No description available.
-
-**CSS** · ⭐ 0
-
 ### 🚀 [Teab-kar](https://github.com/chanrachory/Teab-kar)
 
 No description available.
 
 **JavaScript** · ⭐ 0
+
+### 🚀 [birthday-wish](https://github.com/chanrachory/birthday-wish)
+
+No description available.
+
+**CSS** · ⭐ 0
 
 ### 🚀 [Naruto-Shadow-Clone](https://github.com/chanrachory/Naruto-Shadow-Clone)
 
